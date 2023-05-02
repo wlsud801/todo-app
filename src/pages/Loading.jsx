@@ -23,7 +23,7 @@ const LoadingPage = styled.div`
     height:300px;
     text-align:center;
     color:#f85151;
-    font-size:3rem;
+    font-size:1.5rem;
     font-weight:500;
     & > .flower{
         font-size:8rem;
