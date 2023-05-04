@@ -42,6 +42,9 @@ function TodoList() {
   };
 
   const removeHandler = (id) => {
+    // 이벤트 버블링방지
+    // remove버튼을 클릭하면 li태그가 감싸고 있기때문에 li에 있는 onClick이벤트까지 버블링이 일어남
+    id.stopPropagation();
     // mutate라는 메서드를 사용하면 api가 받아야 하는 parameter를 첫 번째 인자로 넘겨야 함.
     mutation.mutate(id);
   };
@@ -56,9 +59,9 @@ function TodoList() {
       <Layout >
         <StList>
           {data.map((todo) => 
-            <li key={todo.id}>
+            <li key={todo.id}> onClick={() => {handleClick(todo)}}
               <StID>{todo.id}</StID>
-              <StText onClick={() => {handleClick(todo)}}>
+              <StText>
                 <StTitle>{todo.title}</StTitle>
                 <StContent>{todo.contents}</StContent>
               </StText>
