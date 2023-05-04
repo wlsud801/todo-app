@@ -27,16 +27,16 @@ const LoadingPage = styled.div`
     font-weight:500;
     & > .flower{
         font-size:8rem;
-        animation:flower 3s ease-in Infinite Alternate;
+        animation:flower 5s Infinite Alternate;
         @keyframes flower {
             0% {
                 transform:rotate(0deg);
             }
             50% {
-                transform:rotate(360deg);
+                transform:rotate(180deg);
             }
             100% {
-                transform:rotate(0deg);
+                transform:rotate(360deg);
             } 
         }
     }
