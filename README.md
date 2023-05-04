@@ -1,4 +1,4 @@
-![ezgif com-video-to-gif](https://user-images.githubusercontent.com/128350568/236114968-a8713736-33d1-44dd-871c-754ef6c2a52e.gif)
+![image](https://user-images.githubusercontent.com/128350568/236116568-b5f68b0c-2dde-4463-b88e-2a3a719a0ee4.png)
 
 # todolist 서버 연결
 
