@@ -32,7 +32,7 @@ function Detail() {
   const navigate = useNavigate();
   // useQuery 는 Get방식. Get방식(useQuery)쓰면서 querykey 이름을 정할 수 있어요.(첫 번째 인자가 쿼리 키 이름 자리!)
   // const {isLoading, isError, data} = useQuery("todos", getTodos);
-  const {isLoading, isError, data} = useQuery("cards", ()=>getCard(todo.id));
+  const {isLoading, isError,isFetching, data} = useQuery("cards", ()=>getCard(todo.id));
   
   const [editMode, setEditMode] = useState(false);
   
@@ -42,6 +42,9 @@ function Detail() {
   }
 
   if(isLoading){
+    return <Loading />
+  }
+  if(isFetching){
     return <Loading />
   }
   if(isError){
