@@ -11,4 +11,4 @@ react, react-query, axios
 - 상세페이지는 수정할 수 있다.
 
 
-https://todo-app-henna-eta.vercel.app/
+https://todo-app-omega-flame.vercel.app/TodoList
