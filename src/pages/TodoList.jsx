@@ -59,7 +59,7 @@ function TodoList() {
       <Layout >
         <StList>
           {data.map((todo) => 
-            <li key={todo.id}> onClick={() => {handleClick(todo)}}
+            <li key={todo.id} onClick={() => {handleClick(todo)}}> 
               <StID>{todo.id}</StID>
               <StText>
                 <StTitle>{todo.title}</StTitle>
